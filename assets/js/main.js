@@ -50,7 +50,7 @@ initTheme();
 syncThemeIcon();
 
 // Section reveal animations
-const revealTargets = document.querySelectorAll('#projects .container, #about .container, #contact .container, #footer .container');
+const revealTargets = document.querySelectorAll('#projects .container, #about .container, #contact .container');
 revealTargets.forEach((element) => element.classList.add('reveal'));
 
 const revealObserver = new IntersectionObserver(
