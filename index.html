@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tony Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="ambient-visual" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <span class="grid-layer"></span>
+  </div>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="container nav">
+      <h1 class="brand">Tony Portfolio</h1>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#hero">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#footer">Footer</a>
+        <button id="darkModeToggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="hero" class="hero">
+      <div class="container">
+        <h1>Hi <span class="wave" aria-hidden="true">👋</span>, I’m Tony Ford</h1>
+        <p>I build polished, responsive frontend experiences that combine clear design, strong structure, and smooth user interaction.</p>
+        <div class="hero-actions">
+          <a class="contact-btn" href="mailto:orlandoford36@gmail.com" aria-label="Email Tony Ford">Let’s Work</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Selected builds that highlight range, polish, and practical frontend problem-solving.</p>
+        <div class="projects-grid">
+          <a class="project-card" href="https://orlandoford36-lab.github.io/Movie-project-module-5/" target="_blank" rel="noreferrer" aria-label="View Task Manager App project">
+            <img class="project-image" src="assets/images/386745.webp" alt="Preview image for Movie Discovery App" />
+            <h3>Movie Discovery App</h3>
+            <p>An engaging movie browsing experience designed to feel clean, fast, and easy to explore.</p>
+            <span class="project-link">Open Project</span>
+          </a>
+          <a class="project-card" href="https://tony-internship-cer1t84on-tony-fes-projects-projects.vercel.app/" target="_blank" rel="noreferrer" aria-label="View Portfolio Redesign project">
+            <img class="project-image" src="assets/images/anime-programmer-coding-stockcake.jpg" alt="Preview image for Frontend Internship Build" />
+            <h3>Frontend Internship Build</h3>
+            <p>A responsive project that demonstrates clean layout work, interaction polish, and thoughtful structure.</p>
+            <span class="project-link">Open Project</span>
+          </a>
+          <a class="project-card" href="https://orlandoford36-lab.github.io/M10-virtual-internship/" target="_blank" rel="noreferrer" aria-label="View Weather Dashboard project">
+            <img class="project-image" src="assets/images/digital-magic-coder-stockcake.jpg" alt="Preview image for Virtual Internship Project" />
+            <h3>Virtual Internship Project</h3>
+            <p>A practical build focused on interface clarity, responsiveness, and real-world frontend execution.</p>
+            <span class="project-link">Open Project</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <p class="section-subtitle">A bit about me and the tools I work with.</p>
+        <div class="about-wrap">
+          <img class="about-photo" src="assets/images/IMG_8772.JPG" alt="Portrait of Tony Ford" />
+          <div class="about-content">
+            <p>
+              I'm a frontend-focused developer passionate about building fast, accessible, and user-friendly web experiences. 
+              I enjoy working with modern tools and frameworks to solve real problems while keeping code clean and maintainable.
+            </p>
+            <h3 class="skills-title">Skills</h3>
+            <ul class="skills-list">
+              <li>HTML & CSS</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Responsive Design</li>
+              <li>Accessibility (A11y)</li>
+              <li>Web Performance</li>
+              <li>Git & Version Control</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">Have a question or project in mind? Send me a message.</p>
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="contactName">Name</label>
+            <input id="contactName" type="text" name="name" required minlength="2" placeholder="Your name" aria-describedby="nameError" />
+            <span class="form-error" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="contactEmail">Email</label>
+            <input id="contactEmail" type="email" name="email" required placeholder="your@email.com" aria-describedby="emailError" />
+            <span class="form-error" id="emailError"></span>
+          </div>
+
+          <div class="form-group full">
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" name="message" required minlength="10" placeholder="Your message (minimum 10 characters)" aria-describedby="messageError"></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="submit-btn" id="submitBtn" disabled>Send Message</button>
+          <div class="form-status" id="formStatus" aria-live="polite" aria-atomic="true"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Tony. All rights reserved.</p>
+      <nav class="social-links" aria-label="Tony Ford social links">
+        <a href="https://github.com/" aria-label="Visit Tony Ford on GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/" aria-label="Visit Tony Ford on LinkedIn">LinkedIn</a>
+        <a href="https://twitter.com/" aria-label="Visit Tony Ford on Twitter">Twitter</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
